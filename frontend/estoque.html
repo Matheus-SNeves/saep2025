@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Gestão de Estoque</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <button onclick="window.location.href='dashboard.html'">Voltar</button>
+        <h1>Movimentação de Estoque</h1>
+    </header>
+
+    <div class="container">
+        <div class="card">
+            <h3>Registrar Movimentação</h3>
+            <select id="select-produto">
+                <option value="">Selecione um Produto...</option>
+            </select>
+            
+            <select id="tipo-mov">
+                <option value="ENTRADA">Entrada</option>
+                <option value="SAIDA">Saída</option>
+            </select>
+
+            <input type="number" id="qtd-mov" placeholder="Quantidade">
+            <input type="date" id="data-mov">
+            
+            <button onclick="registrarMovimentacao()">Registrar</button>
+        </div>
+        
+        <div id="historico">
+            </div>
+    </div>
+    <script src="script.js"></script>
+    <script>carregarSelectProdutos();</script>
+</body>
+</html>

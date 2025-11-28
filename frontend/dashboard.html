@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <span>Bem-vindo, <b id="user-name">Usuário</b></span>
+        <button onclick="logout()">Sair</button>
+    </header>
+    <nav>
+        <button onclick="window.location.href='produtos.html'">Cadastro de Produtos</button>
+        <button onclick="window.location.href='estoque.html'">Gestão de Estoque</button>
+    </nav>
+    <script src="script.js"></script>
+    <script>verificarAuth();</script>
+</body>
+</html>
